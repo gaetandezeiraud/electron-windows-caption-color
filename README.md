@@ -1,6 +1,6 @@
 ![NpmLicense](https://img.shields.io/npm/l/express.svg)
 
-# Windows-Caption-Color
+# Electron Windows Caption Color
 > Change the color of the title bar (caption) of a win32 electronJS application. Windows 11 Only.
 
 <br>
