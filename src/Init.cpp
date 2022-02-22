@@ -25,8 +25,7 @@ void SetCaptionColor(const FunctionCallbackInfo<Value>& args)
     auto windowHandleBuffer = args[0]->ToObject(context).ToLocalChecked();
     char* bufferData = node::Buffer::Data(windowHandleBuffer);
 
-    uint32_t handle = *reinterpret_cast<uint32_t*>(bufferData);
-    HWND hwnd = (HWND)handle;
+    HWND hwnd = *reinterpret_cast<HWND*>(bufferData);
 
     // Generate the color
     int red = args[1]->NumberValue(context).ToChecked();

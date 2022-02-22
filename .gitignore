@@ -12,3 +12,4 @@ node_modules
 # project
 build
 package-lock.json
+bin/win32-x64-101/electron-windows-caption-color.node

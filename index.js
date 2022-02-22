@@ -3,10 +3,11 @@
 const wcc = require('./build/Release/windowscaptioncolor.node');
 
 module.exports = {
-  SetCaptionColor: function(nativeWindowHandle, red, green, blue) {
-    if(nativeWindowHandle == null)
-			return -1;
-
-    return wcc.SetCaptionColor(nativeWindowHandle, red, green, blue);
+  SetCaptionColor: function(browserWindow, red, green, blue) {
+    try {
+      return wcc.SetCaptionColor(browserWindow.getNativeWindowHandle(), red, green, blue);
+    } catch (e) {
+      throw new TypeError('NOT_VALID_WINDOW')
+    }
   }
 };

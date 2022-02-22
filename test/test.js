@@ -16,10 +16,8 @@ const createWindow = () => {
   mainWindow.webContents.openDevTools();
 
   mainWindow.on('ready-to-show', () => {
-    var nativeHandleBuffer = mainWindow.getNativeWindowHandle();
-    var electronCustomCaption = require(path.join(__dirname,'../index'));
-  
-    electronCustomCaption.SetCaptionColor(nativeHandleBuffer, 255, 0, 0); // Red color
+    const electronCustomCaption = require(path.join(__dirname,'../index'));
+    electronCustomCaption.SetCaptionColor(mainWindow, 255, 0, 0); // Red color
 
     mainWindow.show();
   });

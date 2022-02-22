@@ -22,8 +22,6 @@ npm i electron-windows-caption-color
 ## Usage
 
 ```javascript
-var nativeHandleBuffer = mainWindow.getNativeWindowHandle();
-var electronCustomCaption = require('electron-windows-caption-color');
-  
-electronCustomCaption.SetCaptionColor(nativeHandleBuffer, 255, 0, 0); // Red
+cosnt electronCustomCaption = require('electron-windows-caption-color');
+electronCustomCaption.SetCaptionColor(mainWindow, 255, 0, 0); // Red
 ```
