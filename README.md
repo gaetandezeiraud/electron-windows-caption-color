@@ -22,6 +22,6 @@ npm i electron-windows-caption-color
 ## Usage
 
 ```javascript
-cosnt electronCustomCaption = require('electron-windows-caption-color');
+const electronCustomCaption = require('electron-windows-caption-color');
 electronCustomCaption.SetCaptionColor(mainWindow, 255, 0, 0); // Red
 ```
