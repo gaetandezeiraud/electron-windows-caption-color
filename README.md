@@ -1,5 +1,12 @@
 ![NpmLicense](https://img.shields.io/npm/l/express.svg)
 
+> 🟡 **Project status**: maintenance mode
+  - Project is no longer in active development
+  - Only bug-related issues are accepted
+  - Only bug-related pull requests are accepted
+  - New features are unlikely to be added
+  - Project status may eventually transition to "discontinued" or back to "active"
+
 # Electron Windows Caption Color
 > Change the color of the title bar (caption) of a win32 electronJS application. Windows 11 Only.
 
