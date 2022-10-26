@@ -1,7 +1,7 @@
 {
   "name": "electron-windows-caption-color",
   "description": "Change the color of the title bar (caption) of a win32 electronJS application. Windows 11 Only.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Brouilles/electron-windows-caption-color.git"
@@ -25,11 +25,11 @@
   "license": "MIT",
   "gypfile": true,
   "dependencies": {
-    "nan": "^2.15.0"
+    "nan": "^2.17.0"
   },
   "devDependencies": {
-    "electron": "^17.0.1",
-    "electron-rebuild": "^3.2.7",
-    "node-gyp": "^8.4.1"
+    "electron": "^21.2.0",
+    "electron-rebuild": "^3.2.9",
+    "node-gyp": "^9.3.0"
   }
 }
